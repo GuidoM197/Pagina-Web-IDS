@@ -1,0 +1,324 @@
+/*   STYLE INDEX        */
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/225/154/original/black-low-poly-geometric-background-vector.jpg");
+  background-size: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* utilitario general */
+.full-width {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggler {
+  margin-right: 2rem;
+}
+
+.navbar-btn {
+  display: inline-block;
+  color: black;
+  padding: 0.5rem;
+  width: 5rem;
+  text-align: center;
+  transition: width 0.4s ease-in-out;
+}
+
+.navbar-btn:hover {
+  width: 10rem;
+}
+
+.amd-btn {
+  border-bottom: 2px solid red;
+}
+
+.intel-btn {
+  border-bottom: 2px solid blue;
+}
+
+.user-icon {
+  transform: scale(2);
+  text-decoration: none;
+  color: black;
+}
+
+.changuito {
+  transform: scale(2);
+  margin-left: 2rem;
+}
+
+/* banner */
+.banner {
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+  width: 60%;
+  height: 30%;
+  background-color: black;
+  object-fit: contain;
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sobre nosotros */
+.presentacion {
+  margin: 1rem;
+  background-color: #b8b8b860;
+  border-bottom: #e9ecef;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.438);
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+.separador {
+  background-color: rgba(24, 24, 24, 0.596);
+}
+
+.fotito {
+  display: flex;
+  width: 90%;
+  max-height: 23rem;
+  margin: auto;
+  background-color: transparent;
+  overlay: true;
+}
+
+.nosotros {
+  color: white;
+  margin: 1rem 0;
+  font: bold 1.5em Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.info {
+  background-image: url("https://img.freepik.com/vector-gratis/fondo-oscuro-hexagonos-minimos_79603-1455.jpg");
+  margin: 1rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #e9ecef;
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+/* productos */
+.logo-svg-amd {
+  width: 15%;
+  padding: 1rem 0;
+}
+
+.logo-svg-intel {
+  width: 10%;
+}
+
+.carouseles {
+  background-color: red;
+  width: 60%;
+  margin: 0 auto 100px auto;
+}
+
+.fondo-carousel-amd {
+  background-color: rgba(255, 0, 0, 0.459);
+}
+
+.fondo-carousel-intel {
+  background-color: rgba(0, 0, 255, 0.486);
+}
+
+.fondos-pcs {
+  width: 70%;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  margin: 2rem auto;
+}
+
+.presentacion-pcs {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+}
+
+#amd {
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#intel {
+  border-bottom: 1px solid blue;
+  border-top: 1px solid blue;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.carousel-item .card {
+  border-radius: 0;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.prueba-carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  display: none !important;
+}
+
+.carousel-item.active {
+  display: flex !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 50%;
+  height: min-content;
+  width: min-content;
+}
+
+.boton {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  margin-top: auto;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+}
+
+/* Card carrito */
+
+.card-carrito {
+  width: 60%;
+  margin-bottom: 5%;
+  max-width: 60% !important;
+}
+
+/* Boton carrito */
+
+.boton-compra {
+  width: 80%;
+  height: 40px;
+  color: white;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: auto;
+  margin: 1rem auto;
+}
+
+.carousel-item .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    transition: 0.6s !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-text {
+    font-size: 1em;
+  }
+  .card-title {
+    font-size: 0.8em;
+    text-align: center;
+    max-width: fit-content;
+  }
+  .carousel-item .row {
+    flex-direction: row;
+    margin: 0px;
+    --bs-gutter-x: 1rem;
+  }
+
+  .carousel-item .col-md-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    box-sizing: border-box;
+  }
+
+  .carousel-item .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fondos-pcs {
+    width: 85%;
+  }
+
+  .prueba-carousel {
+    width: 100%;
+  }
+
+  .info {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 1rem;
+    border: 0;
+  }
+
+  .presentacion {
+    width: 100%;
+  }
+  .changuito {
+    margin-left: 0px;
+    margin-right: 72%;
+    transform: scale(1.5);
+  }
+}

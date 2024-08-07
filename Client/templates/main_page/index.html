@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!---importaciones fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!---importaciones de boostrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin=""anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!---importaciones de css nuestro-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main/style.css') }}">
+
+    <title>Profetas del odio</title>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                </svg> PROFETAS DEL ODIO
+            </a>
+            <button class="toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="full-width navbar-nav">
+                    
+                    <a class="amd-btn navbar-btn ms-2 me-3 nav-link active" aria-current="page" href="#amd">AMD</a>
+                    <a class="intel-btn navbar-btn ms-2 me-3 nav-link active" aria-current="page" href="#intel">Intel</a>
+                    <a  class="ml-auto mt-auto mb-auto" href="{{ url_for('mi_perfil') }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle user-icon" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                    </a>
+                    <button class="btn changuito mt-auto mb-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                        >
+                        <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                        />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="banner center">
+            <a class="banner-foto"> <img src="https://imgs.search.brave.com/KqHyxkw59KRDV9AO3gbEZ0C1_q1PRGMADQ1OBJ6PBbI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy1tYXJjYXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzA5L0ludGVsLUVt/YmxlbWEtNjUweDM2/Ni5wbmc" alt=""> </a>
+            <a class="banner-foto"> <img src="https://imgs.search.brave.com/dWNhAsMflGmw3-JqiKJeYqdrtodiMZazDviG79Igccs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zLmVs/eWV4LmNvbS9tZWRp/YS9hcHBsaW5rcy9p/cy9pbnRlbF9iajFx/bEpGLndlYnA" alt=""> </a>
+            <a class="banner-foto"> <img src="https://imgs.search.brave.com/hLiao3YMzdtFTcXOmrPP6LF9Rj64tsf4vcJUCC96lIE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMDQvQU1EX2xv/Z29fbG9nb3R5cGVf/ZW1ibGVtX2JsYWNr/X2JhY2tncm91bmQt/NzAweDIxMS5wbmc" alt=""> </a>
+        </div>
+    </section>
+
+        <section class="full-width center">
+            <div class="presentacion">
+                <p class="nosotros">Sobre Nosotros - Profetas del Odio</p>
+                <p class="center info">
+
+                    En Profetas del Odio, somos el destino definitivo para PCs armadas con pasión y precisión. Desde nuestros inicios, nos dedicamos a ofrecer
+                    soluciones informáticas potentes y personalizadas que satisfacen incluso a los usuarios más exigentes.<br><br>
+
+                    Nos especializamos en la creación de sistemas basados en los procesadores Intel y AMD más destacados, utilizando componentes avanzados.
+                    Nuestro compromiso no solo reside en la calidad de nuestros productos, sino también en ofrecer un servicio al cliente excelente.
+                    Cada PC que ensamblamos es una obra maestra de ingeniería, configurada meticulosamente para ofrecer un rendimiento excepcional y una fiabilidad
+                    incomparable.<br><br>
+
+                </p>
+            </div>
+        </section>
+    </div>
+    <div class="fondos-pcs fondo-carousel-amd">
+        <h2 id="amd" class="presentacion-pcs">Computadoras con Procesador 
+            <img class="logo-svg-amd" src="https://www.comitec.it/files/0fu4g1/amd.png" alt=""> 
+        </h2>
+        <div class="prueba-carousel">
+            <div id="carousel-amd" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    {% for index in range(0, pcs_amd|length, 3) %}
+                    <div class="carousel-item {% if loop.first %}active{% endif %}">
+                        <div class="row">
+                            {% for pc in pcs_amd[index:index+3] %}
+                            <div class="col-md-4">
+                                <div class="card center">
+                                    <img src="{{ pc.imagen }}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ pc.nombre }}</h5>
+                                        <p class="card-text">   ${{ pc.precio }}.</p>
+                                        <a href="{{ url_for('ventas', idpc=pc['idpc']) }}" class="btn btn-primary">Ver ahora</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-amd" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-amd" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondos-pcs fondo-carousel-intel">
+        <h2 id="intel" class="presentacion-pcs">Computadoras con Procesador 
+            <img class="logo-svg-intel" src="https://th.bing.com/th/id/R.268c26fb928b1a746f73d7f71c395efb?rik=ULx9nUYTqfrUWw&pid=ImgRaw&r=0" alt=""> 
+        </h2>
+        <div class="prueba-carousel">
+            <div id="carousel-intel" class="carousel carousel-dark slide">
+                <div class="carousel-inner">
+                    {% for index in range(0, pcs_intel|length, 3) %}
+                        <div class="carousel-item {% if loop.first %}active{% endif %}">
+                            <div class="row">
+                                {% for pc in pcs_intel[index:index+3] %}
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="card center">
+                                            <img  src="{{ pc.imagen }}" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">{{ pc.nombre }}</h5>
+                                                <p class="card-text">${{ pc.precio }}.</p>
+                                                <a href="{{ url_for('ventas', idpc=pc['idpc'] ) }}" class="btn btn-primary">Ver ahora</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-intel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-intel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--offcanva es el nombre de esto para el js-->
+    <!--CARRITO---> 
+    <div class="offcanvas offcanvas-start bar" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!--INTERIOR DEL CARRITO-->
+            {% if carrito %}
+                {% for id, computadora in session['carrito']['carrito_producto'].items() %}
+                    <div class="col-md-4 col-sm-6 col-xs-12 card-carrito">
+                        <div class="card center">
+                            <img  src="{{ computadora.imagen }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>{{ computadora.nombre }}</b></h5>
+                                <p class="card-text">Cantidad de producto: {{ session['carrito']['carrito_cantidad'][id] }} - ${{ computadora.precio }}.</p>
+                                <a id="Eliminar" href="{{ url_for('eliminar', id=computadora['idpc']) }}" class="btn btn-danger boton">Eliminar</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div>
+            {% if session['id'] %}
+                <a class="btn btn-primary boton-compra btns" href="{{ url_for('comprar') }}">Comprar ahora</a>
+            {% endif %}
+        </div>
+    </div>
+    
+
+    
+    <script src="scripts.js"></script>
+    
+</body>
+</html>

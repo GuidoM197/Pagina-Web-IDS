@@ -1,0 +1,246 @@
+/* STYLES VENTAS */
+
+/* utilitario general */
+.full-width {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #ffffff60;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.247);
+}
+
+.toggler {
+  margin-right: 2rem;
+}
+
+.navbar-btn {
+  display: inline-block;
+  color: black;
+  padding: 0.5rem;
+  width: 5rem;
+  text-align: center;
+  transition: width 0.4s ease-in-out;
+}
+
+.navbar-btn:hover {
+  width: 10rem;
+}
+
+.amd-btn {
+  border-bottom: 2px solid red;
+}
+
+.intel-btn {
+  border-bottom: 2px solid blue;
+}
+
+.pushbar .btn-cerrar.izquierda {
+  text-align: left;
+}
+
+.user-icon {
+  transform: scale(2);
+  text-decoration: none;
+  color: black;
+}
+
+.changuito {
+  transform: scale(2);
+  margin-left: 2rem;
+}
+
+/* foto e info del producto */
+.foto-compra {
+  margin-top: 8rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.foto-info {
+  height: min-content;
+  width: 60%;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.247);
+}
+
+.foto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.foto img {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  border-left: 3px solid black;
+}
+
+.datos {
+  padding: 10px;
+}
+
+/* botones */
+
+.buttons {
+  width: 100%;
+  height: 40px;
+  color: white;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: auto;
+}
+
+/* COMPONENTES */
+
+.text-componentes {
+  margin-top: 3rem;
+}
+
+.text-description {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+}
+
+.container-componentes {
+  margin: 4rem auto;
+  margin-top: 1rem;
+  border-top: 1px solid black;
+  width: 60%;
+}
+
+.cont-aux {
+  width: 100%;
+  border-top: 1px solid rgb(0, 81, 255);
+  justify-content: space-between;
+}
+
+.componentes {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.comp-1 {
+  border-right: 2px solid rgb(0, 81, 255);
+}
+
+/* Card carrito */
+
+.card-carrito {
+  width: 60%;
+  margin-bottom: 5%;
+  max-width: 60% !important;
+}
+
+/* Boton carrito */
+
+.boton-compra {
+  width: 80%;
+  height: 40px;
+  color: white;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: auto;
+  margin: 1rem auto;
+}
+
+@media (max-width: 450px) {
+  .center {
+    display: block;
+  }
+
+  .text-componentes {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 2rem;
+  }
+
+  .foto-compra {
+    margin-top: 4rem;
+  }
+
+  .foto-info {
+    width: 100%;
+  }
+
+  .info {
+    padding-top: 1rem;
+    border-left: 0px solid black;
+  }
+
+  .comp-1 {
+    border-right: 0px solid rgb(0, 81, 255);
+  }
+
+  .componentes {
+    padding: 0rem;
+  }
+
+  .button {
+    margin-top: 0;
+  }
+
+  .cont-aux {
+    margin-top: 0.5rem;
+    border-top: 0px;
+  }
+
+  .container-componentes {
+    width: 80%;
+    margin: 0.5rem auto;
+    border-top: 2px solid black;
+  }
+
+  .changuito {
+    margin-left: 0px;
+    margin-right: 72%;
+    transform: scale(1.5);
+  }
+
+  .datos {
+    padding: 0px 10px;
+  }
+
+  p {
+    margin: 0rem;
+  }
+}

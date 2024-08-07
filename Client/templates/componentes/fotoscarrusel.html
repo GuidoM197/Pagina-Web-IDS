@@ -1,0 +1,14 @@
+{% macro newComponent(pc) -%}
+<div class="card center">
+  <img
+    src="{{ url_for('static', filename='imagenes/' + pc.imagen) }}"
+    class="card-img-top"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{pc.procesador}}</h5>
+    <p class="card-text">Precio {{pc.precio}}.</p>
+    <a href="{{ url_for('ventas') }}" class="btn btn-primary">Comprar</a>
+  </div>
+</div>
+{%- endmacro %}
